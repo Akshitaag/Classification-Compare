@@ -1,24 +1,20 @@
-# Bluff-Detector
+# Classifiaction-Compare
 
-### A simple Node web app that uses Random Forest Regression to detect if an employee is demanding excessive salary or is the salary demanded is justified.
+### A simple Node web app that compares accuracy of various classification algorithms.The user can input a .csv file and the output is a table showing accuracy and graphs of various classification algorithms.
 
 ## This app inputs:
 
-```
-1.Employee position (rank in company ) in the form of a number. Ex: CEO is assigned a rank 10 .
-Larger the rank , larger the salary.
-Position-Salaries.csv in sample data folder provides example data.
-2. Employees demanded salary.
-3. A .csv file containing details of previous records of positions and salaries of company's employees.
+ A .csv file containing any kind of data for which decision has to be made on the type of classification algorithm to be selected.
+ The inputs (X) should contain 2 columns and a vector (y) containing 0's and 1's.
 
-```
-
-## Functionalities
-
-
-This app takes the above inputs and predicts whether the employee is honest or is the employee bluffing.
-The node app.js file then sends the information to a python script that implements Random Forest Regression , an ensemble Machine Learning Algorithm on the data to predict the possible salary of the employee.
-
+Algoritms Used:
+1.LogisticRegression
+2.KNeighbors
+3.SVC(linear)
+4.SVC(rbf)
+5.Gaussian
+6.Decision Tree
+7.Random Forest
 
 ## PREREQUISITES
 
@@ -39,6 +35,3 @@ Npm install
 Node app.js
 ```
 Open Your favourite browser and go to localhost:3000 to access this site.
-
-The output display a plot showing the Random Forest Regression curve for your data.
-![Plot picture](./plotPics/pic.png)
