@@ -1,6 +1,6 @@
-# Classifiaction-Compare
+# Classification-Compare
 
-### A simple Node web app that compares accuracy of various classification algorithms.The user can input a .csv file and the output is a table showing accuracy and graphs of various classification algorithms.
+ A simple Node web app that compares accuracy of various classification algorithms on the given dataset.The user can upload a .csv file and the output is a table showing accuracy and graphs of various classification algorithms.
 
 ## This app inputs:
 
