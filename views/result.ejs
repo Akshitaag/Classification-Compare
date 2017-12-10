@@ -1,0 +1,19 @@
+
+<div class="container">
+<table style="width:100%">
+  <tr>
+    <th><h1>Classification Name</h1></th> 
+    <th><h1>Accuracy</h1></th>
+    <th><h1>Image</h1></th>
+  </tr>
+ <%for(var i=0;i<obj.length; i++){%>
+
+ <tr>
+ 	
+ 	<td><h2><%=obj[i].name%></h2></td>
+ 	<td><h2><%=obj[i].accuracy%></h2></td>
+ 	<td><img style="height: 300px; width: 300px; " src="<%=obj[i].plot%>"></td>
+ </tr>
+ <%}%>
+</table>
+</div>
